@@ -1,0 +1,33 @@
+Parametros en php:
+  - Valor
+  - Parametro por referencia: (&) apodo, alias, otro nombre para hablar del mismo elemento, por lo que si se modifica un valor, se modifica el otro.
+    - function suma(&$a, $b){
+        $a+=40;
+        $b+=30;
+
+        return $a+$b;
+      }
+
+      echo suma($t1,$t2);
+
+  - Parametros por default: 
+    - function query($valor=''){
+
+    }
+
+    funcion suma ($a=20,$b=40){
+      return $a+$b;
+    }
+
+    echo suma(); => Regresa 60
+    echo suma(40); => Regresa 80
+
+
+
+Java:
+
+  int suma(int a, int b){
+    return a+b;
+  }
+
+  suma(4,6);
